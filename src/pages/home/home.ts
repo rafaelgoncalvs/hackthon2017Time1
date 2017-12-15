@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { TrocaApi } from '../../api/troca.api';
+import { TrocaApi } from '../../app/api/troca.api';
 
 @Component({
   selector: 'page-home',

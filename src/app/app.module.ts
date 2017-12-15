@@ -9,7 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { TrocaApi } from '../api/troca.api';
+import { TrocaApi } from './api/troca.api';
 
 @NgModule({
   declarations: [
