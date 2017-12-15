@@ -7,16 +7,19 @@ import { DetalhesDaTroca } from '../detalhesDaTroca/detalhesDaTroca';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-
 export class HomePage {
   trocas: any;
 
-  constructor(public navCtrl: NavController) { 
+  constructor(public navCtrl: NavController) {
     this.trocas = new TrocaApi().obter();
   }
 
+  pesquisar(ev: any) {
+    let val = ev.target.value;
+  }
+
   itemSelected(item: string) {
-    console.log('Selected Item', item);
+    console.log('Troca selecionada', item);
     this.navCtrl.push(DetalhesDaTroca);
   }
 }
