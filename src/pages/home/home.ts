@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { TrocaApi } from '../../app/api/troca.api';
+import { DetalhesDaTroca } from '../detalhesDaTroca/detalhesDaTroca';
 
 @Component({
   selector: 'page-home',
@@ -32,6 +33,7 @@ export class HomePage {
   }
 
   itemSelected(item: string) {
-    console.log("Troca selecionada", item);
+    console.log('Troca selecionada', item);
+    this.navCtrl.push(DetalhesDaTroca);
   }
 }
