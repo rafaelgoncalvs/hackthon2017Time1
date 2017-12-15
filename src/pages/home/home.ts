@@ -20,6 +20,8 @@ export class HomePage {
 
   itemSelected(item: string) {
     console.log('Troca selecionada', item);
-    this.navCtrl.push(DetalhesDaTroca);
+    this.navCtrl.push(DetalhesDaTroca,{
+      item: item
+    });
   }
 }
