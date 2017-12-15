@@ -8,20 +8,18 @@
 </ion-header>
 
 <ion-content padding="true" class="has-header">
-    <img src="assets/imgs/foto1.jpg"/>
+    <img src="{{troca.fotos[0]}}"/>
     <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
     <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
     </div>
-    <p style="color:#000000;">{{ troca.necessidade }}</p>
     <div class="show-list-numbers-and-dots">
+        <p style="color:#777;">Benefícios:</p>
+        <ul>
+            <li *ngFor="let beneficio of troca.beneficios">{{ beneficio }}</li>
+        </ul>
+    </div>
+    <p style="color:#777;">Em troca de:</p> {{ troca.necessidade }}
     <p style="color:#777;">Solicitante:</p> {{ troca.solicitante.nome }}
-    </div>
-    <div class="show-list-numbers-and-dots">
-    <p style="color:#777;">Benefícios:</p>
-    <ul>
-        <li *ngFor="let beneficio of troca.beneficios">{{ beneficio }}</li>
-    </ul>
-    </div>
     <div class="show-list-numbers-and-dots">
     <p style="color:#777;">Condições:</p>
     <ul>
