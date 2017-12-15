@@ -1,9 +1,9 @@
 <ion-header>
   <ion-navbar>
+    <ion-searchbar (ionInput)="pesquisar($event)"></ion-searchbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-searchbar (ionInput)="pesquisar($event)"></ion-searchbar>
   </ion-navbar>
 </ion-header>
 
