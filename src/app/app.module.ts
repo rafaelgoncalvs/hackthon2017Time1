@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { DetalhesDaTroca } from '../pages/detalhesDaTroca/detalhesDaTroca';
 import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -15,7 +16,8 @@ import { TrocaApi } from './api/troca.api';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    DetalhesDaTroca
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { TrocaApi } from './api/troca.api';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    DetalhesDaTroca
   ],
   providers: [
     StatusBar,
