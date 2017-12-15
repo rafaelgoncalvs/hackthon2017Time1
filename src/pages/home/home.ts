@@ -18,22 +18,15 @@ export class HomePage {
     let val = ev.target.value;
   }
 
-  obterBeneficio(beneficios: string[]) {
-    if(beneficios) {
-        return beneficios[0];
-    }
-    return '';
-  }
-
-  obterFoto(fotos: string[]) {
+  obterFoto(fotos: any[]) {
     if(fotos) {
-      return fotos[0];
+      let fotoPrincipal = fotos.find(foto => foto.principal)
+      return fotoPrincipal.url
     }
     return '';
   }
 
   itemSelected(item: string) {
-    console.log('Troca selecionada', item);
     this.navCtrl.push(DetalhesDaTroca,{
       item: item
     });

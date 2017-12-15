@@ -12,10 +12,12 @@
       <button ion-item *ngFor="let troca of trocas" (click)="itemSelected(troca)">
         <ion-card>
           <ion-card-header>
-            <img src="assets/imgs/foto1.jpg"/>
+            <img [src]="obterFoto(troca.fotos)"/>
             <div>
-              <p>Benefício:</p>
-              {{ obterBeneficio(troca.beneficios) }}
+              <p>Benefícios:</p>
+              <ul *ngFor="let b of troca.beneficios" >
+                <li>{{ b }}</li>
+              </ul>
             </div>
           </ion-card-header>
           <ion-card-content>
@@ -30,11 +32,7 @@
               </div>
             </div>
             <div>
-              <div>
-                <p>Local:</p>
-                {{ troca.local.endereco }}
-              </div>
-              <span>{{ troca.distancia }}</span>
+              <span>{{ troca.distancia }}</span> de você
             </div>
           </ion-card-content>
         </ion-card>
