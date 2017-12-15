@@ -3,21 +3,22 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    <ion-searchbar (ionInput)="pesquisar($event)"></ion-searchbar>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <div>
-    <span>Pesquise</span>
-    <input/>
-    <button>Pesquisar</button>
-  </div>
-  <div>
     <ion-list>
       <button ion-item *ngFor="let troca of trocas" (click)="itemSelected(troca)">
-        {{ troca.necessidade }}
+        <ion-card>
+          <ion-card-header>
+              {{ troca.necessidade }}
+          </ion-card-header>
+          <ion-card-content>
+              <h2>Local:</h2>{{ troca.solicitante.nome }}
+          </ion-card-content>
+        </ion-card>
       </button>
     </ion-list>
-  </div>
+
 </ion-content>
