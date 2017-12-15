@@ -12,14 +12,14 @@ export class TrocaApi {
             'id': 1,
             'nome': 'E.M. Domingos G. Gomes',
         },
-        'befecicios': ['Utilizar a quadra de esportes de noite durante 6 meses', 'Agradecimento público da escola', 'Placa com a sua marca na quadra'],
+        'beneficios': ['Utilizar a quadra de esportes de noite durante 6 meses', 'Agradecimento público da escola', 'Placa com a sua marca na quadra'],
         'local': {
           'endereco': 'Rua das Garças, 368, Campo Grande - MS'
         },
         'distancia': '120m',
         'fotos': [
-          'localhost:8080/foto1',
-          'localhost:8080/foto2'
+          'src/assets/imgs/foto1.jpg',
+          'src/assets/imgs/foto1.jpg'
         ]
       },
       {
@@ -31,15 +31,12 @@ export class TrocaApi {
             'id': 2,
             'nome': 'APM da Escola Eusébio da Silveira',
         },
-        'befecicios': ['Água gelada por um mês'],
+        'beneficios': ['Água gelada por um mês'],
         'local': {
           'endereco': 'Rua das Garças, 368, Campo Grande - MS'
         },
         'distancia': '356m',
-        'fotos': [
-          'localhost:8080/foto3',
-          'localhost:8080/foto4'
-        ]
+        'fotos': []
       },
       {
         'id': 237,
@@ -50,15 +47,12 @@ export class TrocaApi {
             'id': 3,
             'nome': 'APM da Escola Eusébio da Silveira',
         },
-        'befecicios': ['Água gelada por um mês'],
+        'beneficios': ['Água gelada por um mês'],
         'local': {
           'endereco': 'Rua das Garças, 368, Campo Grande - MS'
         },
         'distancia': '356m',
-        'fotos': [
-          'localhost:8080/foto3',
-          'localhost:8080/foto4'
-        ]
+        'fotos': []
       }
     ];
   }
