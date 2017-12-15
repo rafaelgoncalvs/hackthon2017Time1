@@ -8,11 +8,13 @@
 </ion-header>
 
 <ion-content padding="true" class="has-header">
-    <ion-slides pager="true">
-        <ion-slide *ngFor="let foto of troca.fotos">
-            <img src="{{foto.url}}"/>
-        </ion-slide>
-    </ion-slides>
+    <div>
+        <ion-slides pager="true">
+            <ion-slide *ngFor="let foto of troca.fotos">
+                <img src="{{foto.url}}"/>
+            </ion-slide>
+        </ion-slides>
+    </div>
     <!-- <img src="{{obterFoto(troca.fotos)}}"/> -->
     <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
         <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
