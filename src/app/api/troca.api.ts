@@ -7,7 +7,7 @@ export class TrocaApi {
         'id': 6865,
         'necessidade': 'Pintura da quadra de esportes',
         'condicoes': ['Tem que ser feito nas férias', 'Tinta de primeira'],
-        'tipo': ['Material', 'Mão de obra'],
+        'tipos': ['Material', 'Mão de obra'],
         'solicitante': {
             'id': 1,
             'nome': 'E.M. Domingos G. Gomes',
@@ -18,15 +18,15 @@ export class TrocaApi {
         },
         'distancia': '120m',
         'fotos': [
-          'src/assets/imgs/foto1.jpg',
-          'src/assets/imgs/foto1.jpg'
+          'assets/imgs/foto1.jpg',
+          'assets/imgs/foto2.jpg'
         ]
       },
       {
         'id': 456,
         'necessidade': 'Conserto de bebedouro',
         'condicoes': ['Tem que ser logo'],
-        'tipo': ['Mão de obra'],
+        'tipos': ['Mão de obra'],
         'solicitante': {
             'id': 2,
             'nome': 'APM da Escola Eusébio da Silveira',
@@ -36,13 +36,13 @@ export class TrocaApi {
           'endereco': 'Rua das Garças, 368, Campo Grande - MS'
         },
         'distancia': '356m',
-        'fotos': []
+        'fotos': ['assets/imgs/foto2.jpg']
       },
       {
         'id': 237,
         'necessidade': 'Aquisição de ar condicionado para alunos 2º ANO B',
         'condicoes': ['Tem que ser logo'],
-        'tipo': ['Instalação', 'Rateio da compra'],
+        'tipos': ['Instalação', 'Rateio da compra'],
         'solicitante': {
             'id': 3,
             'nome': 'APM da Escola Eusébio da Silveira',
@@ -52,7 +52,7 @@ export class TrocaApi {
           'endereco': 'Rua das Garças, 368, Campo Grande - MS'
         },
         'distancia': '356m',
-        'fotos': []
+        'fotos': ['assets/imgs/foto3.jpg']
       }
     ];
   }
