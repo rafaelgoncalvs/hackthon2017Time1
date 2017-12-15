@@ -1,25 +1,17 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { TrocaApi } from '../../api/troca.api';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
+  trocas: any;
 
-  trocas = [
-    {
-      'necessidade': 'Descrição da necessidade 1.'
-    },
-    {
-      'necessidade': 'Descrição da necessidade 2.'
-    },
-    {
-      'necessidade': 'Descrição da necessidade 3.'
-    }
-  ];
-
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController) { 
+    this.trocas = new TrocaApi().obter();
   }
 
   itemSelected(item: string) {
