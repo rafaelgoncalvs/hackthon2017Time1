@@ -1,0 +1,8 @@
+{
+  "name": "hackathon2017time1",
+  "app_id": "c4952a2f",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
