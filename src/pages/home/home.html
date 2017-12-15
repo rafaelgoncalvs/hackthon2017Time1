@@ -7,15 +7,34 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
     <ion-list>
       <button ion-item *ngFor="let troca of trocas" (click)="itemSelected(troca)">
         <ion-card>
           <ion-card-header>
-              {{ troca.necessidade }}
+            <img src="assets/imgs/foto1.jpg"/>
+            <div>
+              {{ obterBeneficio(troca.beneficios) }}
+            </div>
           </ion-card-header>
           <ion-card-content>
-              <h2>Local:</h2>{{ troca.solicitante.nome }}
+            <div>
+              <p>Em troca de:</p>
+              {{ troca.necessidade }}
+            </div>
+            <div>
+              <div>
+                <p>Solicitante:</p>
+                {{ troca.solicitante.nome }}
+              </div>
+            </div>
+            <div>
+              <div>
+                <p>Local:</p>
+                {{ troca.local.endereco }}
+              </div>
+              <span>{{ troca.distancia }}</span>
+            </div>
           </ion-card-content>
         </ion-card>
       </button>
